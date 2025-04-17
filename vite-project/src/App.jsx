@@ -1,9 +1,8 @@
 import React from 'react';
-import { hookstate, useHookstate } from '@hookstate/core';
+import {useHookstate } from '@hookstate/core';
 
-const globalState = hookstate(0)
 export const App = () => {
-  const count = useHookstate(globalState);
+  const count = useHookstate(0);
   return (
     <div className="body_cont">
       <div className="header">
